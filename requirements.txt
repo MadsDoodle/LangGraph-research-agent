@@ -1,0 +1,29 @@
+# Core LangChain + LangGraph stack (stable combo)
+langchain
+langchain-core
+langchain-openai
+langgraph
+
+# OpenAI API
+openai==1.40.3
+
+# HTTP client compatibility
+httpx==0.27.0
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Data validation
+pydantic==2.8.2
+
+# Utilities
+pathlib2==2.3.7.post1
+pypdf==3.17.4
+requests==2.32.3
+
+# Backend & Frontend
+fastapi==0.112.1
+uvicorn==0.30.6
+streamlit==1.38.0
+
+pypdf
