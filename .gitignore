@@ -4,4 +4,4 @@ __pycache__/
 generated_project/
 generated_project_1/
 venv/
-web-builder/agent/.env
+web-builder/agent/.env.env
