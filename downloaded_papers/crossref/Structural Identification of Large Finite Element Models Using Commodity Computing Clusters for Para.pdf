@@ -1,0 +1,293 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Login</title>
+	<meta name="description" content="Structural Health Monitoring 2015" />
+	<meta name="keywords" content="proceedings;shm;" />
+	<meta name="generator" content="Open Journal Systems 2.4.5.0" />
+	
+	<link rel="icon" href="https://dpi-proceedings.com/public/journals/2/journalFavicon_en_US.ico" type="cannot open `/tmp/php2d4AVB&#039; (No such file or directory)" />	<link rel="stylesheet" href="https://dpi-proceedings.com/lib/pkp/styles/pkp.css" type="text/css" />
+	<link rel="stylesheet" href="https://dpi-proceedings.com/lib/pkp/styles/common.css" type="text/css" />
+	<link rel="stylesheet" href="https://dpi-proceedings.com/styles/common.css" type="text/css" />
+	<link rel="stylesheet" href="https://dpi-proceedings.com/styles/compiled.css" type="text/css" />
+
+	<!-- Base Jquery -->
+	<script type="text/javascript" src="//www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			<!--
+			// Provide a local fallback if the CDN cannot be reached
+			if (typeof google == 'undefined') {
+				document.write(unescape("%3Cscript src='https://dpi-proceedings.com/lib/pkp/js/lib/jquery/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+				document.write(unescape("%3Cscript src='https://dpi-proceedings.com/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js' type='text/javascript'%3E%3C/script%3E"));
+			} else {
+				google.load("jquery", "1.4.4");
+				google.load("jqueryui", "1.8.6");
+			}
+			// -->
+		</script>
+	
+	
+	
+	<link rel="stylesheet" href="https://dpi-proceedings.com/styles/sidebar.css" type="text/css" />		<link rel="stylesheet" href="https://dpi-proceedings.com/styles/rightSidebar.css" type="text/css" />	
+			<link rel="stylesheet" href="https://dpi-proceedings.com/public/site/sitestyle.css" type="text/css" />
+			<link rel="stylesheet" href="https://dpi-proceedings.com/plugins/themes/classicBlue/classicBlue.css" type="text/css" />
+			<link rel="stylesheet" href="https://dpi-proceedings.com/public/journals/2/journalStyleSheet.css" type="text/css" />
+	
+	<!-- Default global locale keys for JavaScript -->
+	
+<script type="text/javascript">
+	jQuery.pkp = jQuery.pkp || { };
+	jQuery.pkp.locale = { };
+			
+				jQuery.pkp.locale.form_dataHasChanged = 'The data on this form has changed. Continue anyway?';
+	</script>
+	<!-- Compiled scripts -->
+			
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/lib/jquery/plugins/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/functions/fontController.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/functions/general.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/functions/jqueryValidatorI18n.js"></script>
+
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/classes/Helper.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/classes/ObjectProxy.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/classes/Handler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/classes/linkAction/LinkActionRequest.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/classes/features/Feature.js"></script>
+
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/SiteHandler.js"></script><!-- Included only for namespace definition -->
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/UrlInDivHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/AutocompleteHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/ExtrasOnDemandHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/form/FormHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/form/AjaxFormHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/form/ClientFormHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/grid/GridHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/controllers/linkAction/LinkActionHandler.js"></script>
+
+<script type="text/javascript" src="https://dpi-proceedings.com/js/pages/search/SearchFormHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/js/statistics/ReportGeneratorFormHandler.js"></script>
+<script type="text/javascript" src="https://dpi-proceedings.com/plugins/generic/lucene/js/LuceneAutocompleteHandler.js"></script>
+
+<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/lib/jquery/plugins/jquery.pkp.js"></script>	
+	<!-- Form validation -->
+	<script type="text/javascript" src="https://dpi-proceedings.com/lib/pkp/js/lib/jquery/plugins/validate/jquery.validate.js"></script>
+	<script type="text/javascript">
+		<!--
+		// initialise plugins
+		
+		$(function(){
+			jqueryValidatorI18n("https://dpi-proceedings.com", "en_US"); // include the appropriate validation localization
+			
+			$(".tagit").live('click', function() {
+				$(this).find('input').focus();
+			});
+		});
+		// -->
+		
+	</script>
+
+		
+</head>
+<body id="pkp-user-login" class="">
+<div id="container">
+
+<div id="header">
+<div id="headerTitle">
+<div id="dt" style="display:none;"><p><span style="font-style:normal;">DES</span>tech Transactions on</p></div>
+<h1 id="">
+	<img src="https://dpi-proceedings.com/public/journals/2/pageHeaderTitleImage_en_US.jpg" width="792" height="216" alt="Page Header" />
+</h1>
+</div>
+</div>
+
+<div id="body">
+
+	<div id="sidebar">
+							<div id="rightSidebar">
+				<div class="block" id="sidebarSubscription">
+	<span class="blockTitle">Subscription</span>
+							Login to verify subscription
+			</div><div class="block" id="sidebarUser">
+			<span class="blockTitle">User</span>
+	
+						<form method="post" action="https://dpi-proceedings.com/index.php/SHM2015/login/signIn">
+				<table>
+					<tr>
+						<td><label for="sidebar-username">Username</label></td>
+						<td><input type="text" id="sidebar-username" name="username" value="" size="12" maxlength="32" class="textField" /></td>
+					</tr>
+					<tr>
+						<td><label for="sidebar-password">Password</label></td>
+						<td><input type="password" id="sidebar-password" name="password" value="" size="12" maxlength="32" class="textField" /></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox" id="remember" name="remember" value="1" /> <label for="remember">Remember me</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Login" class="button" /></td>
+					</tr>
+				</table>
+			</form>
+			</div><div class="block" id="sidebarNavigation">
+	<span class="blockTitle">Journal Content</span>
+
+	<form id="simpleSearchForm" method="post" action="https://dpi-proceedings.com/index.php/SHM2015/search/search">
+		<table id="simpleSearchInput">
+			<tr>
+				<td>
+													<label for="simpleQuery">Search <br />
+					<input type="text" id="simpleQuery" name="simpleQuery" size="15" maxlength="255" value="" class="textField" /></label>
+								</td>
+			</tr>
+			<tr>
+				<td><label for="searchField">
+				Search Scope
+				<br />
+				<select id="searchField" name="searchField" size="1" class="selectMenu">
+					<option label="All" value="query">All</option>
+<option label="Authors" value="authors">Authors</option>
+<option label="Title" value="title">Title</option>
+<option label="Abstract" value="abstract">Abstract</option>
+<option label="Index terms" value="indexTerms">Index terms</option>
+<option label="Full Text" value="galleyFullText">Full Text</option>
+
+				</select></label>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Search" class="button" /></td>
+			</tr>
+		</table>
+	</form>
+
+	<br />
+
+		<span class="blockSubtitle">Browse</span>
+	<ul>
+		<li><a href="https://dpi-proceedings.com/index.php/SHM2015/issue/archive">By Issue</a></li>
+		<li><a href="https://dpi-proceedings.com/index.php/SHM2015/search/authors">By Author</a></li>
+		<li><a href="https://dpi-proceedings.com/index.php/SHM2015/search/titles">By Title</a></li>
+		
+					<li id="otherjournals"><a href="https://dpi-proceedings.com/index.php/index">Other Journals</a></li>
+						</ul>
+	</div>
+
+<!-- Add javascript required for font sizer -->
+<script type="text/javascript">
+	<!--
+	$(function(){
+		fontSize("#sizer", "body", 9, 16, 32, ""); // Initialize the font sizer
+	});
+	// -->
+</script>
+
+<div class="block" id="sidebarFontSize" style="margin-bottom: 4px;">
+	<span class="blockTitle">Font Size</span>
+	<div id="sizer"></div>
+</div>
+<br />
+			</div>
+			</div>
+
+<div id="main" class="">
+<div id="navbar">
+	<ul class="menu">
+		<li id="home"><a href="https://dpi-proceedings.com/index.php/SHM2015/index">Home</a></li>
+		<li id="about"><a href="https://dpi-proceedings.com/index.php/SHM2015/about">About</a></li>
+
+					<li id="login"><a href="https://dpi-proceedings.com/index.php/SHM2015/login">Login</a></li>
+							<li id="register"><a href="https://dpi-proceedings.com/index.php/SHM2015/user/register">Register</a></li>
+												<li id="search"><a href="https://dpi-proceedings.com/index.php/SHM2015/search">Search</a></li>
+		
+					<li id="current"><a href="https://dpi-proceedings.com/index.php/SHM2015/issue/current">Current</a></li>
+			<li id="archives"><a href="https://dpi-proceedings.com/index.php/SHM2015/issue/archive">Archives</a></li>
+		
+				
+
+									<li class="navItem" id="navItem-0"><a href="http://structure.stanford.edu/workshop/">About</a></li>
+												<li class="navItem" id="navItem-1"><a href="https://dpi-proceedings.com/index.php/SHM2015">Table of Contents</a></li>
+												<li class="navItem" id="navItem-2"><a href="https://dpi-proceedings.com/index.php/SHM2015/user/subscriptions">Purchase E-Book Access</a></li>
+												<li class="navItem" id="navItem-3"><a href="http://www.destechpub.com/links/catalogs/bookstore/advanced-materials-science--technology-16/structural-health-2/structural-health-monitoring-2015/">Hard Cover</a></li>
+						</ul>
+</div>
+<div id="breadcrumb">
+	<a href="https://dpi-proceedings.com/index.php/SHM2015/index">Home</a> &gt;
+			<a href="https://dpi-proceedings.com/index.php/SHM2015/login?source=%2Findex.php%2FSHM2015%2Farticle%2Fview%2F774%2F774&amp;loginMessage=payment.loginRequired.forArticle" class="current">Login</a></div>
+
+<h3 class="pretitle"></h3>
+
+<h2 class="autopagetitle" style="margin-bottom:0;">Login</h2>
+
+<h3 class="subtitlehere"></h3>
+<h3 class="author1"></h3>
+<h3 class="author2"></h3>
+<h3 class="author3"></h3>
+<h3 class="author4"></h3>
+
+
+<div id="content">
+
+
+
+	<span class="instruct">Subscription or article purchase required to access item. To verify subscription, access previous purchase, or purchase article, log in to journal.</span>
+	<br />
+	<br />
+
+	<form id="signinForm" method="post" action="https://dpi-proceedings.com/index.php/SHM2015/login/signIn">
+
+
+<input type="hidden" name="source" value="/index.php/SHM2015/article/view/774/774" />
+
+	<table id="signinTable" class="data">
+	<tr>
+		<td class="label"><label for="loginUsername">Username</label></td>
+		<td class="value"><input type="text" id="loginUsername" name="username" value="" size="20" maxlength="32" class="textField" /></td>
+	</tr>
+	<tr>
+		<td class="label"><label for="loginPassword">Password</label></td>
+		<td class="value"><input type="password" id="loginPassword" name="password" value="" size="20" maxlength="32" class="textField" /></td>
+	</tr>
+		<tr valign="middle">
+		<td></td>
+		<td class="value"><input type="checkbox" id="loginRemember" name="remember" value="1" /> <label for="loginRemember">Remember my username and password</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td><input type="submit" value="Login" class="button" /></td>
+	</tr>
+	</table>
+
+	<p style="font-size:150%;">
+		&#187; <a href="https://dpi-proceedings.com/index.php/SHM2015/user/register">Not a user? Register with this site</a><br />		&#187; <a href="https://dpi-proceedings.com/index.php/SHM2015/login/lostPassword">Forgot your password?</a>
+	</p>
+<p class="userreg" style="color:red;font-size:150%;font-weight:bold;margin-bottom:0;padding-bottom:0;">
+You must register to purchase the entire proceedings and/or individual articles.
+</p>
+<p class="otherprocreg" style="display:none;color:red;font-size:150%;font-weight:bold;margin-bottom:0;padding-bottom:0;">
+You must register to purchase online proceedings.
+</p>
+<p class="asc34reg" style="display:none;color:red;font-size:150%;font-weight:bold;margin-bottom:0;padding-bottom:0;">
+ASC 34 users must register to submit abstracts.
+</p>
+<script type="text/javascript">
+<!--
+	document.getElementById('loginUsername').focus();
+// -->
+</script>
+</form>
+
+
+</div><!-- content -->
+</div><!-- main -->
+</div><!-- body -->
+
+
+
+</div><!-- container -->
+</body>
+</html>

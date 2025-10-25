@@ -27,3 +27,6 @@ uvicorn==0.30.6
 streamlit==1.38.0
 
 pypdf
+pdf2image
+pytesseract
+pillow
