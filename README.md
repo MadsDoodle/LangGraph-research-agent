@@ -8,6 +8,9 @@ The Research AI Agent is a comprehensive system that automates academic explorat
 
 It goes a step further — the agent can generate new research papers in authentic academic formatting and structure, synthesizing insights from multiple sources while maintaining coherence and originality.
 
+## Visual Interface
+It has a frontend made using Streamlit, which shows a unique research_id, LnagGraph tools called, paprs serached through, and paper generated incase that tool is being called.
+![Streamlit](assets/landing.png)
 
 ## 🏗️ Architecture
 
